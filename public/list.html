@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div id="top">
+            <h1 id="welcome"></h1>
+            <div id="buttons">
+                <a href="timed/timed.html"><button id="timed">timed</button></a>
+                <button id="logout">logout</button>
+            </div>
+        </div>
+        
+        <input type="text" id="taskInput" placeholder="Add a Task">
+        <button id="addTask">Add</button>
+        <ul id="taskList">
+
+        </ul>
+        <progress id="progress" value="0" max="100"></progress>
+        <div><label for="progress" id="progLabel"></label> </div>
+    </div>  
+    
+    <script src="script.js"></script>
+</body>
+</html>

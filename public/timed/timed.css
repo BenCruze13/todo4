@@ -1,0 +1,236 @@
+:root{
+    --bg: rgb(27, 27, 27);
+    --main: rgb(255, 132, 0);
+    --primary: rgb(40, 40, 40);
+    --secondary: rgb(130, 130, 130);
+    --font: whitesmoke;
+
+    --fontLite: rgb(172, 172, 172);
+    --positive: green;
+    --negative: red;
+    --barRed: rgb(215, 63, 63);
+    --barGreen: rgb(63, 215, 78);
+    --barBlue: rgb(63, 164, 215);
+    --nav: rgb(18, 18, 18);
+}
+body{
+    height: 100vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font);
+
+    transition: .5s;
+}
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px
+}
+h1{
+    color: var(--main);
+    font-weight: 300;
+}
+.container{
+    height: 100vh;
+    text-align: center;
+
+}
+ul{
+   padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+li{
+    width: 50%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background: var(--primary);
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+li button{
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: .3s;
+    
+
+}
+li button:hover{
+    color: var(--font);
+    background: rgb(210, 59, 59);
+    transition: .3s;
+}
+li h3{
+    margin: 0;
+    width: 80%;
+    padding: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    flex-grow: 0.9;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    transition: .3s;
+    color: var(--font);
+    font-weight: 100;
+    
+
+}
+input[type="checkbox"]:checked~ h3{
+    text-decoration: line-through;
+    color: rgb(111, 111, 111);
+    transition: .3s;
+}
+input[type="checkbox"]:checked{
+    accent-color: var(--main);
+    color: white;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    
+    
+}
+
+#taskInput{
+    padding: 5px;
+    width: 30%;
+    
+}
+#timeAmt{
+    padding: 5px;
+    width: 5%;
+}
+#timeMeasure{
+    padding: 5px;
+    width: 5%;
+}
+
+
+#addTask{
+    width: 7%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: .3s;
+    margin-left: 10px;
+
+}
+#addTask:hover{
+    color: var(--font);
+    background: var(--main);
+    transition: .3s;
+}
+progress{
+    width: 30%;
+    height: 3px;
+    border-radius: 0px;
+}
+progress::-webkit-progress-bar{
+    background-color: var(--font);
+    transition: .5s;
+    
+}
+progress::-webkit-progress-value{
+    
+    background: var(--main);
+    transition: .5s;
+}
+.completed::-webkit-progress-value{
+    box-shadow: 0 0 10px rgba(255, 74, 19, 0.8);
+}
+#progLabel{
+    color: var(--secondary);
+    font-size: .9em;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+section{
+    min-height: 100vh;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.top_nav{
+    background: var(--nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3em 3em .3em 3em;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.top_nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.top_nav h1{
+    font-weight: 100;
+    color: var(--fontLite);
+}
+nav{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var();
+    position: sticky;
+    top:0;
+    background: var(--bg);
+    height: 100vh;
+    z-index: 500;
+}
+nav a{
+    width: 90%;
+    height: 40px;
+    text-decoration: none;
+    color: var(--fontLite);
+    margin-bottom: 2em;
+    border: 1px solid var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    
+}
+nav a:hover{
+    background: var(--fontLite);
+    transform: scale(1.05);
+    color: var(--bg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.536);
+    border: 1px solid transparent;
+}
+
+
+nav img{
+    width: 50%;
+    border-radius: 50%;
+    height: 17%;
+    transform: scale(1.5);
+    margin-bottom: 5em;
+    margin-top: 5em;
+    transition: .5s;
+}
+
+#content{
+    display: flex;
+    color: black;
+    align-items: center;
+}

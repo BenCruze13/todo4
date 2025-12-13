@@ -1,0 +1,20 @@
+:root{
+    --bgcolor: rgb(50, 50, 50);
+    --darkbg:rgb(32, 32, 32);
+    --fontcolor: whitesmoke;
+    --main: rgb(255, 132, 0);
+}
+.container .signUp{
+    width: 100%;
+    height: 40px;
+    color: var(--darkbg);
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: .3s;
+}
+.container .signUp:hover{
+    background: var(--main);
+    color: var(--fontcolor);
+}
